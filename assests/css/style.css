@@ -1,0 +1,238 @@
+/* reset */
+
+
+body,
+h1,
+h2,
+h3 ul,
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body {
+    font-weight: Georgia, serif;
+    color: #252525;
+
+}
+
+
+.menu {
+    background-color: #252525;
+    padding: 20px 0px;
+    color: #fff;
+}
+
+.logo {
+    display: block;
+    float: left;
+    align-self: center;
+    border: 1px solid #fff;
+    margin-left: 10px;
+    text-align: center;
+    padding: 1.125rem;
+}
+
+.menu-nav {
+    float: right;
+    margin-right: 10px;
+
+}
+
+.menu-nav li {
+    display: inline-block;
+}
+
+.menu-nav a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.125em;
+}
+
+.menu-container {
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+.menu-container::after,
+.menu-container::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.intro {
+    background: url('../img/cafe-pronto.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 159px 0px;
+    text-align: center;
+}
+
+.intro h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+.intro h1::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 4px;
+    background-color: #fff;
+    margin: 0px auto;
+}
+
+.intro p {
+    font-style: italic;
+    font-size: 1.124rem;
+}
+
+/* sobre */
+
+
+.sobre{
+    padding:60px 0px;
+}
+
+.sobre-container {
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+.sobre-container::after,
+.sobre-container::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.sobre h2{
+    text-align: center;
+    font-size: 2.25rem;
+    margin-bottom: 60px;
+}
+
+.sobre-item{
+    width: 460px;
+    float: left;
+    margin: 0 10px;
+}
+.sobre-item img{
+    display: block;
+    max-width: 100%;
+}
+
+.sobre-item h3{
+    font-size: 2.25rem;
+    background: #252525;
+    width: 220px;
+    color: #fff ;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1em;
+    padding:10px;
+    text-align: center;
+    position: relative;
+    top: -60px  ;
+
+}
+
+.sobre > p{
+    font-size: 1.25rem;
+    line-height: 1.4rem;
+    font-style: italic;
+    text-align: center;
+    margin: 0px auto;
+    max-width: 460px;
+}
+
+/* produtos */
+
+
+.produto{
+    background: #e7e4d8;
+    padding: 60px 0px;
+}
+
+.produto-container{
+    max-width: 906px;
+    margin: 0px auto;
+}
+
+.produto-item{
+    max-width: 300px;
+    float: left;
+    margin: 0px 10px 20px 10px;
+}
+.produto-container {
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+.produto-container::after,
+.produto-container::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.produto-item h2::before{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: currentColor;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 5px solid #e7e4d8;
+    box-shadow: 0px 0px 0px 5px currentColor;
+}
+h2.produto-paulista::before{
+    color: #492901;
+}
+h2.produto-carioca::before{
+    color: #c17139;
+}
+h2.produto-mineiro::before{
+    color: #d7a54d;
+}
+.produto-item h2{
+    text-align: center;
+    font-size: 2.25em;
+    margin-bottom: 20px;
+
+}
+
+.produto-item p{
+    font-size: 0.875em;
+    line-height: 1.4em;
+}
+
+.produto-btn{
+    width: 180px;
+    display: block;
+    color: #252525;
+    text-decoration: none;
+    border: 3px solid  ;
+    margin: 20px auto 0px auto;
+    padding: 15px 0px;
+    text-align: center;
+    font-size: 1.125em;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
