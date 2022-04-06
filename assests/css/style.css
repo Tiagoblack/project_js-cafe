@@ -1,4 +1,4 @@
-/* reset */
+/* reset */     
 
 
 body,
@@ -20,7 +20,7 @@ body {
 
 .menu {
     background-color: #252525;
-    padding: 20px 0px;
+    padding: 10px 0px;
     color: #fff;
 }
 
@@ -29,7 +29,8 @@ body {
     float: left;
     align-self: center;
     border: 1px solid #fff;
-    margin-left: 10px;
+    margin: 10px 0px 10px  10px ;
+    
     text-align: center;
     padding: 1.125rem;
 }
@@ -65,6 +66,71 @@ body {
     clear: both;
 }
 
+.menu-nav i{
+    display: none;
+}
+
+.close{
+    display: none;
+}
+
+
+@media (max-width: 739px) {
+
+ 
+    .menu-container{
+        margin: 0 auto;
+    }
+    .menu-nav ul{
+        position: fixed;
+        top: 0px ;
+        left: 0px;
+        bottom: 0px;
+        height: 100%;
+        width: 100%;
+        display: none;
+        float: none;
+        clear: both;
+        z-index: 1000;
+        background-color: #252525;
+        padding: 0 ;
+        border-bottom: 1px solid;
+    }
+
+    .menu-nav li{
+
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .close{
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+        border: 1px solid #fff;
+        color: #fff;
+        font-size: 1.125em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    /* .menu-nav.active {
+
+    } */
+
+    .menu-nav  i{
+        margin-top: calc(100%/ 2);
+        transform: translateY(50%);
+        font-size: 2rem;
+        display: block;
+
+    }
+    
+   
+
+}
+
 .intro {
     background: url('../img/cafe-pronto.jpg') no-repeat center center;
     background-size: cover;
@@ -89,6 +155,13 @@ body {
 .intro p {
     font-style: italic;
     font-size: 1.124rem;
+}
+
+@media (max-width: 739px) {
+    .intro{
+       padding: 40px;
+    }
+
 }
 
 /* sobre */
@@ -148,6 +221,31 @@ body {
     text-align: center;
     margin: 0px auto;
     max-width: 460px;
+}
+
+@media (min-width: 740px) and (max-width:980px) {
+    .sobre-item{
+        width: 340px;
+
+    }
+
+    .sobre-container{
+        max-width: 720px;
+    }
+
+
+
+}
+
+@media (max-width:739px) {
+    .sobre-container{
+        width: 300px;
+    }
+
+    .sobre-item{
+        width: 300px;
+        margin: 0 auto;
+    }
 }
 
 /* produtos */
@@ -225,14 +323,268 @@ h2.produto-mineiro::before{
     text-transform: uppercase;
 }
 
+@media (min-width: 740px) and (max-width:980px) {
+    .produto-item{
+        width: 220px;
+
+    }
+
+    .produto-container{
+        max-width: 720px;
+    }
+
+}
+
+@media (max-width: 739px) {
+    .produto-container{
+        max-width: 300px;
+    }
+    .produto-item{
+        width: 300px;
+        margin: 0 auto 20px auto;
+    }
+}
 
 
 
 
 
+/* locais */
+
+
+.locais{
+    max-width: 960px;
+    margin: 0px auto;
+    padding: 20px 0px ;
+}
+
+
+.locais-item img{
+    width: 460px;
+    display: block;
+    float: left;
+    margin: 0px 10px;
+
+}
+
+.locais-item{
+    clear: both;
+    margin: 60px auto;
+}
+
+.locais-item::after, .locais-item::before{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+
+.locais-item > div{
+    width: 460px;
+    float: left;
+    margin: 0px 10px;
+
+}
+
+.locais-item h2{
+    font-size: 2.25em;
+    margin-bottom: 20px;
+}
+
+.locais-item p{
+    font-size: 1.125em;
+    line-height: 1.43em;
+    max-width: 320px;
+    margin-bottom: 40px;
+}
+.locais-item a{
+    /* display: block; */
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.125em;
+    border: 3px solid;
+    color: #252525;
+    padding:20px 25px;
+    text-align: center;
+    font-weight: bold;
+    
+
+}
+
+@media (min-width: 740px) and (max-width:980px) {
+    .locais{
+        max-width: 720px;
+    }
+
+    .locais-item > div, .locais-item img{
+        max-width: 340px;
+    }
+
+}
+
+@media (max-width: 739px) {
+    .locais{
+        max-width: 300px;
+    }
+    .locais-item img{
+        max-width: 300px;
+        margin: 10px auto 0px auto;
+    }
+
+    .locais-item > div,  .locais-item img{
+        max-width: 300px;
+    }
+}
 
 
 
+/* assine */
 
 
+.assine{
+    background-color: #e7e4d8;
+    padding: 30px 0px ;
 
+}
+
+.assine-container{
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+.assine-container::before, .assine-container::after{
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.assine-infor{
+
+    width: 460px;
+    margin: 0px  10px   ;
+    float: left;
+}
+
+
+.assine-infor h2{
+    font-size: 2.25em;
+}
+
+.assine-infor p{
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.assine form{
+    width: 460px;
+    margin: 10px 10px 0px 10px ;
+    float: left;
+}
+
+
+.assine form label{
+    display: none;
+}
+
+.assine input{
+    box-sizing: border-box;
+    width: 320px;
+    border: 3px solid #252525;
+    background: none;
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: Georgia, serif;
+    padding: 10px;
+    float: left;
+    outline: none;
+}
+
+.assine button{
+    background: #252525;
+    font-family: Georgia, serif;
+    font-size: 1.5em;
+    width: 140px;
+    padding: 13px 0px ;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+@media (min-width: 740px) and (max-width:980px) {
+    .assine-container{
+        width: 720px;
+
+    }
+
+    .assine-infor{
+        max-width: 340px;
+    }
+
+    .assine form{
+        width: 340px;
+    }
+    .assine input{
+        width: 340px;
+    }
+
+}
+
+@media (max-width:739px) {
+    .assine-container{
+        width: 300px;
+
+    }
+
+    .assine-infor, .assine form,  .assine input{
+        width: 340px;
+        margin: 10px 0px 0px 0px;
+    }
+
+}
+
+/* footer */
+
+footer{
+    background: #d7a54d;
+    padding: 40px 0px ;
+}
+
+.footer-container{
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+.footer-container p {
+    float: left;
+    margin: 0px 10px ;
+    font-size: 1.125em;
+    list-style: 1.4em;
+}
+
+.footer-container::after, .footer-container::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.footer-logo{
+    float: right;
+}
+
+
+@media (max-width:739px) {
+    .footer-container{
+        max-width: 300px;
+
+    }
+
+    footer p{
+        float: none;
+        margin: 0px;
+    }
+
+    .footer-logo{
+        float: none;
+        margin:20px 0px ;
+    }
+}
